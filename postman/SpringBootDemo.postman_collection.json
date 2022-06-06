@@ -1,0 +1,318 @@
+{
+	"info": {
+		"_postman_id": "a20260c0-230e-4395-aca8-ce9902bb920a",
+		"name": "SpringBootDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "测试",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080",
+							"host": [
+								"localhost"
+							],
+							"port": "8080"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "请求方法",
+			"item": [
+				{
+					"name": "Request Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/request/get",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"request",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/request/post",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"request",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/request/put",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"request",
+								"put"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/request/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"request",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "请求参数",
+			"item": [
+				{
+					"name": "Create Admin User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "adminUserName",
+									"value": "demodeom",
+									"type": "default"
+								},
+								{
+									"key": "adminUserPassword",
+									"value": "12345678",
+									"type": "default"
+								},
+								{
+									"key": "adminUserStatus",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/adminUser/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"adminUser",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Admin User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/adminUser/find?id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"adminUser",
+								"find"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Admin User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "adminUserName",
+									"value": "demo_new",
+									"type": "text"
+								},
+								{
+									"key": "adminUserPassword",
+									"value": "666666",
+									"type": "text"
+								},
+								{
+									"key": "adminUserStatus",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/adminUser/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"adminUser",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Admin User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "adminUserName",
+									"value": "demo_new",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "adminUserPassword",
+									"value": "666666",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "adminUserStatus",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/adminUser/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"adminUser",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteNew Admin User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/adminUser/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"adminUser",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateNew Admin User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"adminUserName\":\"demodeom\",\n    \"adminUserPassword\":\"12345678\",\n    \"adminUserStatus\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/adminUser/createNew",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"adminUser",
+								"createNew"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
